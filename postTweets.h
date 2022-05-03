@@ -1,0 +1,26 @@
+//
+// Created by Maryanna Iloduba on 03/05/2022.
+//
+
+#ifndef COMP10050_ASSIGNMENT_2_POSTTWEETS_H
+#define COMP10050_ASSIGNMENT_2_POSTTWEETS_H
+
+#endif //COMP10050_ASSIGNMENT_2_POSTTWEETS_H
+
+#include "twitter_create.h"
+void postTweets(user* first, tweet* tweet1, twitter* twitter_system)
+{
+//just like in the notes this function will allow the user to post tweets that they have created
+
+//tweet from user
+printf("Post Tweet Below:\n");
+for(int i=0; i<=1; i++)
+{
+//fgets will get the users
+fgets(tweet->msg, TWEET_LENGTH, stdin);
+}
+//increase num_tweets by 1
+num_tweets++;
+
+
+}
