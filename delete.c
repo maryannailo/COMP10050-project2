@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <string.h>
+#include "twitter_create.h"
+
 void delete(user* first, twitter* twitter_system){
     do {
         first->num_following--;
