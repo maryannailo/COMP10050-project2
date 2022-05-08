@@ -7,6 +7,8 @@
 
 #endif //COMP10050_ASSIGNMENT_2_POSTTWEETS_H
 
+#include <stdio.h>
+#include <string.h>
 #include "twitter_create.h"
 void postTweets(user* first, tweet* tweet1, twitter* twitter_system)
 {
