@@ -13,7 +13,7 @@
 void postTweets(user* first, tweet* tweet1, twitter* twitter_system)
 {
 //just like in the notes this function will allow the user to post tweets that they have created
-    strcpy(&twitter_system->news_feed[twitter_system->num_tweets].author, first->username);
+    strcpy(&twitter_system->news_feed[twitter_system->num_tweets].user, first->username);
     twitter_system->news_feed[twitter_system->num_tweets].id = twitter_system->num_tweets;
 
 //tweet from user
