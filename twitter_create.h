@@ -36,4 +36,4 @@ typedef struct twitter{
     int num_users;
 } twitter;
 
-void create_twitter_system(twitter * twitter_system);
+user* create_twitter_system(twitter * twitter_system);
