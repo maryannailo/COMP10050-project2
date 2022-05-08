@@ -1,6 +1,9 @@
 //
 // Created by Ifunanya Iloduba on 06/05/2022.
 //
+#include <stdio.h>
+#include <string.h>
+#include "twitter_create.h"
 
 void followUser(user* first, user* next){
     strcpy(first->following[first->num_following], next->username);
