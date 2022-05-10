@@ -2,7 +2,7 @@
 #include "twitter_create.h"
 #include "Functions.h"
 
-int main() //begin main function
+int main()
 {
     int input, n1, n2=0; //n1: following count, n2: tweet count
     twitter twitter_system; //declaring twitter system struct
@@ -33,7 +33,7 @@ int main() //begin main function
             //if statements to call the correct function according to the user's input
             if(input == 1)
             {
-                postTweets(&twitter_system, j, n2); //The user posts a tweet
+                postTweets(j, n2, &twitter_system); //The user posts a tweet
                 n2++; //increment number of tweets
             }
             else if(input == 2)
@@ -47,11 +47,11 @@ int main() //begin main function
             }
             else if(input == 4)
             {
-                unfollowUser(&twitter_system, j); //The user unfollows a user they follow
+                unfollowUser(n1, j); //The user unfollows a user they follow
             }
             else if(input == 5)
             {
-                delete(&twitter_system, j); //The user deletes their account from the twitter system
+                delete(j, &twitter_system); //The user deletes their account from the twitter system
             }
             else if(input == 6)
             {
