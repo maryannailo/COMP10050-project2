@@ -5,9 +5,9 @@
 #include <string.h>
 #include "twitter_create.h"
 
-void getNewsFeed(twitter *twitter_system, int tweetNumber,int user)
+void getNewsFeed(twitter *twitter_system, int tweetNum, int user)
 {
-    for (int k = 0; k < tweetNumber; k++)
+    for (int k = 0; k < tweetNum; k++)
     {
         if (k >= 10)
         {
@@ -19,9 +19,9 @@ void getNewsFeed(twitter *twitter_system, int tweetNumber,int user)
             {
                 if (strcmp(twitter_system->users[user].username, twitter_system->news_feed[i].user) == 0)
                 {
-                    printf("User - %s:\nID : %d\nTweet : %s\n\n\n", twitter_system->news_feed[tweetNumber - k - 1].user,
-                           twitter_system->news_feed[tweetNumber - k - 1].id,
-                           twitter_system->news_feed[tweetNumber - k - 1].msg);
+                    printf("User - %s:\nID : %d\nTweet : %s\n\n\n", twitter_system->news_feed[tweetNum - k - 1].user,
+                           twitter_system->news_feed[tweetNum - k - 1].id,
+                           twitter_system->news_feed[tweetNum - k - 1].msg);
                 }
                 else
                 {
@@ -30,9 +30,9 @@ void getNewsFeed(twitter *twitter_system, int tweetNumber,int user)
                         if (strcmp(twitter_system->users[user].following[j], twitter_system->news_feed[i].user) == 0)
                         {
                             printf("User:%s:\nID: %d\nTweet:%s\n\n\n",
-                                   twitter_system->news_feed[tweetNumber - k - 1].user,
-                                   twitter_system->news_feed[tweetNumber - k - 1].id,
-                                   twitter_system->news_feed[tweetNumber - k - 1].msg);
+                                   twitter_system->news_feed[tweetNum - k - 1].user,
+                                   twitter_system->news_feed[tweetNum - k - 1].id,
+                                   twitter_system->news_feed[tweetNum - k - 1].msg);
                         }
                     }
                 }
