@@ -9,9 +9,9 @@
 #include <stdio.h>
 
 void delete(user* first, twitter* twitter_system);
-int endTwitter();
 void followUser(user* first, user* next);
 void unfollowUser(user* first, user* next);
 void postTweets(user* first, tweet* tweet1, twitter* twitter_system);
 void getNewsFeed(twitter *twitter_system, int tweetNumber,int user);
 void turnEnd(user* first);
+int endTwitter();
