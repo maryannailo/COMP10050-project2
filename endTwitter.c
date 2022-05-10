@@ -1,5 +1,6 @@
 #include <stdlib.h>
 
-void endTwitter(){
-    exit 0;
+int endTwitter()
+{
+    return 0;
 }
